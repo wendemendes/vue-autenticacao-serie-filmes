@@ -1,12 +1,7 @@
-//import { routes as home } from '../components'
 import { routes as auth } from '../modules/auth'
-import Home from "@/components/Home";
+import { routes as home } from '../views/home'
 
 export default [
     ...auth,
-    {
-        path: '/',
-        name: 'Home',
-        component: Home
-      }
+    ...home
 ]
